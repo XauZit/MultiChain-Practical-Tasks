@@ -32,6 +32,14 @@ findstr /b "chain-name protocol-version default-network-port default-rpc-port mi
 
 Full worked answer with outputs and explanation: **[docs/02-sample-question-create-chain1.md](docs/02-sample-question-create-chain1.md)**
 
+## Exam tasks
+
+| Task | | Guide |
+|---|---|---|
+| 1 | Connect your chain with the MultiChain Web Demo | ✅ [docs/05-web-demo.md](docs/05-web-demo.md) |
+| 2 | Create the **Goffycoin** asset in the web demo and send it to another address | **[docs/09-task-2-goffycoin-asset.md](docs/09-task-2-goffycoin-asset.md)** (step-by-step with screenshots) |
+| 3, 4 | Assigned in class | [docs/08-tasks-3-and-4.md](docs/08-tasks-3-and-4.md) |
+
 ## Exam-day sequence (type these yourself)
 
 ```bat
@@ -59,7 +67,8 @@ multichain-cli chain1 getblockchainparams
 | [05 Web Demo (PHP 8.4)](docs/05-web-demo.md) | Setting up and demonstrating multichain-web-demo |
 | [06 Viva questions](docs/06-viva-questions.md) | Short explanations for "explain the steps you performed" |
 | [07 Troubleshooting](docs/07-troubleshooting.md) | Common errors and fixes |
-| [08 Tasks 3 and 4](docs/08-tasks-3-and-4.md) | To be added when the questions are released |
+| [08 Exam tasks](docs/08-tasks-3-and-4.md) | Task list and status (tasks 3 and 4 assigned in class) |
+| [09 Task 2: Goffycoin asset](docs/09-task-2-goffycoin-asset.md) | Issue Goffycoin in the web demo and send it to another address, with screenshots and CLI checks |
 | [reference/params.dat.sample](reference/params.dat.sample) | A full `params.dat` exactly as MultiChain 2.3.3 writes it |
 
 ## Helper scripts (Windows): `scripts/windows/`
