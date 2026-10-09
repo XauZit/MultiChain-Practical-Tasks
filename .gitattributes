@@ -1,0 +1,5 @@
+# Windows scripts are stored with CRLF line endings so they work from a clone or a ZIP download
+# (cmd.exe can misparse LF-only batch files).
+*.bat -text
+*.ps1 -text
+scripts/windows/settings.txt -text

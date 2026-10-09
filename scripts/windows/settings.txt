@@ -1,0 +1,11 @@
+# Paths used by every script in this folder. Edit here only (no quotes, no trailing spaces).
+# MC_DIR   = folder that contains multichaind.exe, multichain-cli.exe and multichain-util.exe
+# PHP_EXE  = php.exe used to run the MultiChain Web Demo
+# CHAIN    = blockchain name used when a script is run without arguments
+# WEB_PORT = port for the web demo (http://127.0.0.1:WEB_PORT/)
+# MC_DATA  = leave empty to use the MultiChain default %APPDATA%\MultiChain
+MC_DIR=C:\Users\BK-PC\Downloads\Programs\multichain-windows-2.3.3
+PHP_EXE=C:\inetpub\php\php-8.4\php.exe
+CHAIN=chain1
+WEB_PORT=8080
+MC_DATA=
