@@ -9,9 +9,16 @@ def txid():
     _n[0] += 1
     return hashlib.sha256(str(_n[0]).encode()).hexdigest()
 
-def newaddr():
+B58 = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
+
+def newaddr():  # deterministic, shaped like a MultiChain base58 address
     _n[0] += 1
-    return '1' + hashlib.sha256(b'a' + str(_n[0]).encode()).hexdigest()[:33]
+    n = int.from_bytes(hashlib.sha256(b'a' + str(_n[0]).encode()).digest(), 'big')
+    s = ''
+    while len(s) < 33:
+        n, r = divmod(n, 58)
+        s += B58[r]
+    return '1' + s
 
 ALL_PERMS = ['connect', 'send', 'receive', 'issue', 'create', 'mine', 'activate', 'admin']
 A0 = newaddr()
