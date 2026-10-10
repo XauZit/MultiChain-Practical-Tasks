@@ -98,8 +98,9 @@ MC_DATA=
 | `02-start-node.bat [name]` | Starts `multichaind chain1` in its own window |
 | `03-show-answers.bat [name]` | Prints chain-name, protocol-version, ports and consensus from `params.dat` (and live `getinfo`) |
 | `04-lab-walkthrough.bat [name]` | Runs the lab commands step by step (addresses, permissions, assets, streams, blocks) |
-| `05-web-demo.bat [name]` | Writes `web-demo\config.txt` and opens the Web Demo at http://127.0.0.1:8080/ |
+| `05-web-demo.bat [name ...]` | Writes `web-demo\config.txt` and opens the Web Demo at http://127.0.0.1:8080/ (give several names for several chains) |
 | `06-stop-node.bat [name]` | `multichain-cli chain1 stop` |
+| `10-task3-two-chains.bat` | Creates (if needed) and starts PaymentChain + ServiceChain, then opens the web demo for both |
 | `99-reset-chain.bat [name]` | Stops the node and **deletes** the chain folder (asks first), to practise again |
 
 You can double-click the scripts or run them from Command Prompt. In the exam, **type the real commands

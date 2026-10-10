@@ -1,0 +1,20 @@
+{
+  "timestamp": "<CURRENT UTC TIME, e.g. 2026-10-10T09:15:00Z>",
+  "request_id": "REQ001",
+  "logged_on": "ServiceChain",
+  "source_chain": "PaymentChain",
+  "destination_chain": "ServiceChain",
+  "event": "RECEIPT_RECORDED",
+  "status": "VALID",
+  "amount": 1000,
+  "fee_amount": 20,
+  "net_amount": 980,
+  "transaction_ids": {
+    "payment_request_txid": "<PAYMENT_REQUEST_TXID>",
+    "fee_payment_txid": "<FEE_PAYMENT_TXID>",
+    "custody_payment_txid": "<CUSTODY_PAYMENT_TXID>",
+    "fee_log_txid": "<FEE_LOG_TXID>",
+    "servicechain_receipt_txid": "<RECEIPT_TXID>"
+  },
+  "error_message": ""
+}
