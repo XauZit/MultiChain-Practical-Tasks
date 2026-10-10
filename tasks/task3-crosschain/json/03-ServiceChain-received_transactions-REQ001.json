@@ -1,0 +1,11 @@
+{
+  "request_id": "REQ001",
+  "source_chain": "PaymentChain",
+  "destination_chain": "ServiceChain",
+  "amount": 1000,
+  "fee_percent": 2,
+  "fee_amount": 20,
+  "net_amount": 980,
+  "fee_payment_txid": "<FEE_PAYMENT_TXID>",
+  "custody_payment_txid": "<CUSTODY_PAYMENT_TXID>"
+}

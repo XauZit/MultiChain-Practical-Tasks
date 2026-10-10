@@ -18,9 +18,10 @@ The original demo was last updated in 2021 and was written for PHP 5/7. **On PHP
 
 [`web-demo/`](../web-demo) is the original code (commit `582476b`) plus small PHP 8 fixes, listed in
 [`web-demo/PHP8-CHANGES.md`](../web-demo/PHP8-CHANGES.md). It was tested on **PHP 8.3.6 and PHP 8.4.25**:
-every page and form (new address, grant, label, issue with file, update, send, create stream, publish
-hex/JSON/text/file/multi-key, view by key/publisher, offers, filters) ran against a simulated
-MultiChain 2.3.3 node with `error_reporting=E_ALL`, with **0 errors** (original code: 51 failures).
+every page and form (new address, grant, label, issue with file, update, send, create stream, subscribe,
+publish hex/JSON/text/file/multi-key, view by key/publisher, offers, stream filter compile/test/create/approve,
+transaction filter test) ran against a simulated MultiChain 2.3.3 node with `error_reporting=E_ALL`,
+with **0 errors** (original code: 62 failures).
 See [`dev/README.md`](../dev/README.md).
 
 ## Quick start (script)

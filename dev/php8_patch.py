@@ -53,9 +53,13 @@ edit('page-publish.php', [
 edit('page-send.php', [("if (strlen($_POST['metadata']))", "if (strlen((string)@$_POST['metadata']))")], [HTML_POST])
 edit('page-streamfilter.php', [
     ("'options' => $_POST['offchain'] ? 'offchain' : ''", "'options' => @$_POST['offchain'] ? 'offchain' : ''"),
+    ("if ($_POST['callbacks'])", "if (@$_POST['callbacks'])"),  # unticked checkbox is not posted
     ("if (@count($filterkeystreams[$filter['createtxid']])) {", "if (!empty($filterkeystreams[$filter['createtxid']])) {"),
 ], [STRLEN_POST, HTML_POST])
-edit('page-txfilter.php', [], [STRLEN_POST, HTML_POST])
+edit('page-txfilter.php', [
+    ("$showcallbacks=$_POST['sendcallbacks'];", "$showcallbacks=@$_POST['sendcallbacks'];"),
+    ("$showcallbacks=$_POST['rawcallbacks'];", "$showcallbacks=@$_POST['rawcallbacks'];"),
+], [STRLEN_POST, HTML_POST])
 edit('page-label.php', [("html($labels[$address])", "html(@$labels[$address])")])
 for page in ('page-create.php', 'page-permissions.php', 'page-offer.php', 'page-accept.php', 'page-approve.php', 'page-view.php'):
     edit(page, [], [STRLEN_POST, HTML_POST])

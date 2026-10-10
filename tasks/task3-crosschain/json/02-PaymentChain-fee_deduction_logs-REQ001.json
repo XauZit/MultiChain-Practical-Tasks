@@ -1,0 +1,15 @@
+{
+  "request_id": "REQ001",
+  "source_chain": "PaymentChain",
+  "destination_chain": "ServiceChain",
+  "asset": "PayToken",
+  "amount": 1000,
+  "fee_percent": 2,
+  "fee_amount": 20,
+  "net_amount": 980,
+  "payment_request_txid": "<PAYMENT_REQUEST_TXID>",
+  "fee_collection_address": "<FEE_COLLECTION_ADDRESS>",
+  "relay_custody_address": "<RELAY_CUSTODY_ADDRESS>",
+  "fee_payment_txid": "<FEE_PAYMENT_TXID>",
+  "custody_payment_txid": "<CUSTODY_PAYMENT_TXID>"
+}

@@ -59,7 +59,7 @@
 					else
 						output_error_text('Filter code blocked this stream item with the reason: '.$suffix."\n".$teststreamfilter['reason']);
 					
-					if ($_POST['callbacks'])
+					if (@$_POST['callbacks'])
 						output_filter_test_callbacks($teststreamfilterraw);
 						
 				} else

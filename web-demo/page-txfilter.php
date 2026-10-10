@@ -37,12 +37,12 @@
 			$_POST['sendfrom'], array($_POST['to'] => array($_POST['asset'] => floatval($_POST['qty']))), array(), 'sign'
 		))) {
 			$sendrawtx=$createrawsendfrom['hex'];
-			$showcallbacks=$_POST['sendcallbacks'];
+			$showcallbacks=@$_POST['sendcallbacks'];
 		}
 	
 	if (@$_POST['testtxfilterraw']) {
 		$sendrawtx=trim($_POST['rawtx']);
-		$showcallbacks=$_POST['rawcallbacks'];
+		$showcallbacks=@$_POST['rawcallbacks'];
 	}
 	
 	if (isset($sendrawtx)) {

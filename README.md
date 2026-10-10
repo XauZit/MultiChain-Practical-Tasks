@@ -38,7 +38,7 @@ Full worked answer with outputs and explanation: **[docs/02-sample-question-crea
 |---|---|---|
 | 1 | Connect your chain with the MultiChain Web Demo | ✅ [docs/05-web-demo.md](docs/05-web-demo.md) |
 | 2 | Create the **Goffycoin** asset in the web demo and send it to another address | **[docs/09-task-2-goffycoin-asset.md](docs/09-task-2-goffycoin-asset.md)** (step-by-step with screenshots) |
-| 3, 4 | Assigned in class | [docs/08-tasks-3-and-4.md](docs/08-tasks-3-and-4.md) |
+| 3–4 | Class lab: two chains (PaymentChain → ServiceChain), 2% fee, relay, **stream filter** `validate_fee_record`, audit logs | **[docs/10-task-3-crosschain-stream-filter.md](docs/10-task-3-crosschain-stream-filter.md)** (46 screenshots) + copy-paste JSON and filter code in [`tasks/task3-crosschain/`](tasks/task3-crosschain) |
 
 ## Exam-day sequence (type these yourself)
 
@@ -67,8 +67,9 @@ multichain-cli chain1 getblockchainparams
 | [05 Web Demo (PHP 8.4)](docs/05-web-demo.md) | Setting up and demonstrating multichain-web-demo |
 | [06 Viva questions](docs/06-viva-questions.md) | Short explanations for "explain the steps you performed" |
 | [07 Troubleshooting](docs/07-troubleshooting.md) | Common errors and fixes |
-| [08 Exam tasks](docs/08-tasks-3-and-4.md) | Task list and status (tasks 3 and 4 assigned in class) |
+| [08 Exam tasks](docs/08-tasks-3-and-4.md) | Task list and status |
 | [09 Task 2: Goffycoin asset](docs/09-task-2-goffycoin-asset.md) | Issue Goffycoin in the web demo and send it to another address, with screenshots and CLI checks |
+| [10 Tasks 3–4: Cross-chain + stream filter](docs/10-task-3-crosschain-stream-filter.md) | PaymentChain/ServiceChain lab done entirely in the web demo, with the filter code, tests, approval and audit logs |
 | [reference/params.dat.sample](reference/params.dat.sample) | A full `params.dat` exactly as MultiChain 2.3.3 writes it |
 
 ## Helper scripts (Windows): `scripts/windows/`
@@ -83,8 +84,9 @@ Double-click them or run them from Command Prompt. Paths come from
 | `02-start-node.bat` | `multichaind chain1` in its own window |
 | `03-show-answers.bat` | Answer sheet from your `params.dat` (+ live `getinfo` if the node runs) |
 | `04-lab-walkthrough.bat` | Runs the lab commands step by step and shows each command |
-| `05-web-demo.bat` | Configures and opens the Web Demo on http://127.0.0.1:8080/ |
+| `05-web-demo.bat` | Configures and opens the Web Demo on http://127.0.0.1:8080/ (`05-web-demo.bat PaymentChain ServiceChain` for several chains) |
 | `06-stop-node.bat` | `multichain-cli chain1 stop` |
+| `10-task3-two-chains.bat` | Cross-chain lab: creates/starts PaymentChain and ServiceChain and opens the web demo for both |
 | `99-reset-chain.bat` | Deletes the chain (asks first) so you can practise again |
 
 Each script takes an optional chain name, e.g. `01-create-chain.bat chain2`.
